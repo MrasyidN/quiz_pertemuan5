@@ -84,32 +84,28 @@
         hargaKopi = 0;
         pelengkap = 0;
 
-        if (kopi == "kopiarabika") {
+        if (kopi == "kopiarabika"){
             hargaKopi = 10000;
-        } else if (kopi == "kopirobusta") {
+        }else if (kopi == "kopirobusta"){
             hargaKopi = 15000;
-        } else if (kopi == "kopiliberika") {
+        }else if (kopi == "kopiliberika"){
             hargaKopi = 20000;
-        } else if (kopi == "kopiekselsa") {
+        }else if (kopi == "kopiekselsa"){
             hargaKopi = 25000;
         }
 
-        if (cakeChecked) {
+        if(cakeChecked){
             pelengkap += 5000;
-        }
-        if (browniesChecked) {
+        }if(browniesChecked){
             pelengkap += 10000;
-        }
-        if (dalgonaChecked) {
+        }if(dalgonaChecked){
             pelengkap += 15000;
         }
-
          total = hargaKopi + pelengkap;
-
          hasilPesanan = "Nama: " + nama + "<br>" +
-                           "Alamat: " + alamat + "<br>" +
-                           "Pesanan Jenis Kopi: " + kopi + "<br>" +
-                           "Total: " + total;
+        "Alamat: " + alamat + "<br>" +
+        "Pesanan Jenis Kopi: " + kopi + "<br>" +
+        "Total: " + total;
 
         document.getElementById("hasil").innerHTML = hasilPesanan;
     }
